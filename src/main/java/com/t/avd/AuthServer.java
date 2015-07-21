@@ -52,7 +52,7 @@ public class  AuthServer {
 	  } 
 		 	
 	  private  String auth(String digest) throws Exception {
-			    String urlStr = "http://" + RestSdk.restServer + "/rtc/auth/valid?access_key=" + accessKey + "&digest£½" + digest;
+			    String urlStr = "http://" + RestSdk.restServer + "/rtc/auth/valid?access_key=" + accessKey + "&digest=" + digest;
 			    URL localURL = new URL(urlStr);
 		      	URLConnection connection = localURL.openConnection();
 		        HttpURLConnection httpURLConnection = (HttpURLConnection)connection;

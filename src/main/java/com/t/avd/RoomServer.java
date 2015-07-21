@@ -113,8 +113,7 @@ public class  RoomServer {
 	  
 		 public static void main(String[] args) throws Exception {
 			   String restServer = "192.168.2.2"; 
-			  
-			   String accessTocken = "58cc702dbf0ad485eaf659750619d631e9cf29f2"; 
+			   String accessTocken = "NmYwMzQ3M2Q5N2NlNjFhZTA0MDM1MTYyMGQyZjcyZTE5ODMzNmY0OQ%3D%3D"; 
 			   String topic = "top & % -  123"; 
 			   int maxVideo = 5; 
 			   int maxAudio = 5; 
@@ -131,8 +130,6 @@ public class  RoomServer {
 			   }catch(RoomException  roomException){
 				   System.out.println(roomException.getKey() + ":" + roomException.getMessage());
 			   }
-		 }
-	 
-	          
+		 } 
      
 }
