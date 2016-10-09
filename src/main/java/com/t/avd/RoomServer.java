@@ -24,7 +24,7 @@ public class  RoomServer {
 	  private final int maxVideo;
 	  private final int maxAudio;
 	  private final String hostPassword;
-	  private final int  roomMode = 1;
+	  private final int  roomMode = 1; //1--MCCU,3--P2P
 	  
 	  public RoomServer(String accessTocken ,String topic, int maxVideo, int maxAudio, String hostPassword) {
 		  this.accessTocken = accessTocken;
@@ -112,8 +112,8 @@ public class  RoomServer {
 		 }
 	  
 		 public static void main(String[] args) throws Exception {
-			   String restServer = "192.168.2.2"; 
-			   String accessTocken = "NmYwMzQ3M2Q5N2NlNjFhZTA0MDM1MTYyMGQyZjcyZTE5ODMzNmY0OQ%3D%3D"; 
+			   String restServer = "121.41.102.126:8080"; 
+			   String accessTocken = "MzMwMWYyMGU0MGM0YmRhZjhmMTMzZTU0YWQzNDJiYzRlNGNmNTgwYw%3D%3D"; 
 			   String topic = "top & % -  123"; 
 			   int maxVideo = 5; 
 			   int maxAudio = 5; 
@@ -125,8 +125,8 @@ public class  RoomServer {
 			       String roomId = roomServer.createRoom();
 			       System.out.println("roomId:"+ roomId);
 			       
-			       Room room = roomServer.getRoom(roomId);
-			       System.out.println("roomURL:"+ room.getRoomURL());
+			       //Room room = roomServer.getRoom(roomId);
+			       //System.out.println("roomURL:"+ room.getRoomURL());
 			   }catch(RoomException  roomException){
 				   System.out.println(roomException.getKey() + ":" + roomException.getMessage());
 			   }

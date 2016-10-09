@@ -99,7 +99,7 @@ public class  AuthServer {
 	  
 	  
 		 public static void main(String[] args) throws Exception {
-			   String restServer= "192.168.2.2";
+			   String restServer= "121.41.102.126:8080";
 			   String accessKey= "demo_access";
 			   String secretKey= "demo_secret";
 			   
